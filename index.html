@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aninha</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="/components/variables.css" />
+    <link rel="stylesheet" href="/components/classes.css" />
+  </head>
+
+  <body>
+    <script type="module">
+      import raven from "./node_modules/@dvo/raven/src/index.js";
+      // Sets up store
+      raven.load({
+        isPanelOpen: false,
+      });
+    </script>
+    <script type="module">
+      import "./components/atoms/social-media.js";
+      import "./components/navigation/nav-bar.js";
+      import "./components/navigation/nav-logo.js";
+      import "./components/pages/main/view-hero.js";
+      import "./components/pages/main/view-portfolio.js";
+      import "./components/pages/main/view-curriculum.js";
+      import "./components/pages/main/view-contact.js";
+      import "./components/pages/main/project-card.js";
+      import "./components/navigation/nav-footer.js";
+    </script>
+    <script type="module" src="main.js" defer></script>
+
+    <nav-bar>
+      <nav-logo></nav-logo>
+    </nav-bar>
+
+    <view-hero>
+      <p>Hello, my name is Ana.</p>
+      <p>I am a UX/UI designer in Vancouver.</p>
+    </view-hero>
+
+    <view-portfolio>
+      <h2 slot="title">Portfolio</h2>
+      <p slot="intro">
+        Here you can find examples of redesign proposals for existing websites,
+        solo projects as well of group projects.
+      </p>
+      <div class="projects-wrapper" slot="projects">
+        <project-card
+          data-href="/the_voice.html"
+          data-src="assets/thumbnails/the-voice.png"
+          data-title="Swap Project - the Voice Langara"
+          data-focus="Accessibility, UI, UX"
+          data-system="Multiplatform"
+        ></project-card>
+        <project-card
+          data-href="/vita.html"
+          data-src="assets/thumbnails/vita.png"
+          data-title="Team Project - Vita"
+          data-focus="UI, UX"
+          data-system="Multiplatform"
+        ></project-card>
+        <project-card
+          data-href="/vancouver_sun.html"
+          data-src="assets/thumbnails/vancouver-sun.png"
+          data-title="Redesign - Vancouver Sun"
+          data-focus="UI"
+          data-system="Multiplatform"
+        ></project-card>
+        <project-card
+          data-href="/weather_station.html"
+          data-src="assets/thumbnails/weather-station.png"
+          data-title="Redesign - Weather Station"
+          data-focus="UX"
+          data-system="iOS"
+        ></project-card>
+        <project-card
+          data-href="/aizenkai.html"
+          data-src="assets/thumbnails/aizenkai.png"
+          data-title="Redesign - Aizenkai Website"
+          data-focus="UI"
+          data-system="Web - Larger Screens"
+        ></project-card>
+        <project-card
+          data-href="/underwater.html"
+          data-src="assets/thumbnails/underwater.png"
+          data-title="Project - Under water"
+          data-focus="UI"
+          data-system="Android"
+        ></project-card>
+      </div>
+    </view-portfolio>
+
+    <view-curriculum></view-curriculum>
+
+    <view-contact></view-contact>
+
+    <nav-footer></nav-footer>
+  </body>
+</html>

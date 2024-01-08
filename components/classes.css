@@ -1,0 +1,16 @@
+@import "./variables.css";
+
+.copy-link {
+  color: var(--color-link);
+  color: yellow;
+  font-size: var(--font-size-copy);
+  font-weight: 600;
+  line-height: var(--line-height-copy);
+}
+
+.view-title {
+  color: var(--color-heading);
+  font-family: var(--font-family);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-heading);
+}

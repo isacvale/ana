@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "DexaPro";
+  font-style: normal;
+  font-weight: 800;
+  src: local("DexaPro"), url("/assets/fonts/Dexa_800.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DexaPro";
+  font-style: normal;
+  font-weight: 700;
+  src: local("DexaPro"),
+    url("/assets/fonts/DexaPro/DexaPro-700-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DexaPro";
+  font-style: normal;
+  font-weight: 600;
+  src: local("DexaPro"),
+    url("/assets/fonts/DexaPro/DexaPro-600-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DexaPro";
+  font-style: normal;
+  font-weight: 500;
+  src: local("DexaPro"),
+    url("/assets/fonts/DexaPro/DexaPro-500-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DexaPro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("DexaPro"),
+    url("/assets/fonts/DexaPro/DexaPro-400-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DexaProNarrow";
+  font-style: normal;
+  font-weight: 300;
+  src: local("DexaPro"),
+    url("/assets/fonts/DexaPro/DexaPro-Narrow-300-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans Display";
+  font-style: normal;
+  font-weight: 700;
+  src: local("NotoSansDisplay-Bold"),
+    url("/assets/fonts/NotoSansDisplay-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans Display";
+  font-style: normal;
+  font-weight: 800;
+  src: local("NotoSansDisplay-ExtraBold"),
+    url("/assets/fonts/NotoSansDisplay-ExtraBold.otf") format("opentype");
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "DexaPro", "Noto Sans Display", sans-serif;
+}
+
+h2 {
+  color: var(--color-heading);
+  font-size: 1.9rem;
+  font-weight: 600;
+}

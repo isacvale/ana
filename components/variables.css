@@ -1,0 +1,45 @@
+:root,
+:host {
+  font-size: clamp(16px, calc(14px + 0.2vw), 32px);
+  --color-base-purple: #8d1d71;
+  --color-base-purple-tint: #c93aa5;
+  --color-base-purple-unsaturated-tint: #bc66a7;
+  --color-bg-base: white;
+  --color-bg-base-dark: #f5f5f5;
+  --color-bg-base-light: #fbf9f7;
+  --color-bg-button: var(--color-base-purple);
+  --color-bg-button-hover: var(--color-base-purple-tint);
+  --color-bg-button-active: var(--color-base-purple-unsaturated-tint);
+  --color-bg-card: #f8f8f8;
+  --color-bg-input: #f7ede1;
+  --color-danger: #e31414;
+  --color-heading: var(--color-base-purple);
+  --color-link: #1c55c0;
+  --color-text: black;
+  --color-transparent: hsl(240 50% 80% / 0);
+  --color-foo: #345678;
+  --focus-control: 0 0 0 4px var(--color-base-purple);
+  --font-family: DexaPro, "Noto Sans Display", sans-serif;
+  --font-family-narrow: DexaProNarrow, sans-serif;
+  --font-size-button-mobile: 1.125rem;
+  --font-size-button-medium: 1.5rem;
+  --font-size-copy: 1.3rem;
+  --font-size-hero: 2.05rem;
+  --font-size-input: 1rem;
+  --font-size-label: 0.85rem;
+  --font-size-heading: 1.9rem;
+  --font-size-small: 0.75rem;
+  --font-weight-heading: 600;
+  --font-weight-label: 500;
+  --line-height-copy: 140%;
+  --shadow: 0 12px 16px -14px hsl(0 0% 0% / 0.3),
+    0 4px 10px 0 hsl(0 0% 0% / 0.14);
+  --shadow-inset: inset 4px 0 14px -4px hsl(0 0% 0% / 0.17),
+    inset 0 3px 3px 1px hsl(0 0% 0% / 0.15);
+  --space-base: 1.3rem;
+  --space-menu-bar: calc(3 * var(--space-base));
+  --space-view-padding: var(--space-base);
+  --z-index-navbar: 900;
+  --z-index-modal: 1000;
+  --breakpoint-mobile: 600px;
+}
